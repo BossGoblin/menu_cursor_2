@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://00_Assets/00_UI/MenuCursor/MenuCursor.gd" type="Script" id=1]
+[ext_resource path="res://00_Assets/00_Sprites/UI_Sprites/cursor_2.png" type="Texture" id=2]
+
+[node name="MenuCursor" type="TextureRect"]
+margin_right = 19.0
+margin_bottom = 17.0
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+sound_player_path = NodePath("AudioStreamPlayer")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -15.0
